@@ -40,6 +40,16 @@ $("#fileInput").on("change", async function () {
     $("#btnClearFiles").removeAttr("title");
 });
 
+$("#btnClearFiles").click(function () {
+    files = [];
+    $("#list").empty();
+    $("#fileCount").empty();
+    $("#btnMerge").attr("disabled", true);
+    $("#btnMerge").attr("title", "You must select at least 2 files to merge");
+    $("#btnClearFiles").attr("disabled", true);
+    $("#btnClearFiles").attr("title", "No files to clear");
+});
+
 $("#btnMerge").click(async () => {
     const out = await PDFLib.PDFDocument.create();
     for (const it of files) {
