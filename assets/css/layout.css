@@ -1,0 +1,82 @@
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    background: radial-gradient(circle at top left, #17304f 0%, var(--bg) 45%, #040911 100%);
+    min-height: 100vh;
+}
+
+.page-shell {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+}
+
+.hero {
+    padding: 54px 0 34px;
+}
+
+.hero-content {
+    background: linear-gradient(135deg, rgba(76, 201, 240, 0.16), rgba(124, 77, 255, 0.16));
+    border: 1px solid var(--border);
+    border-radius: 28px;
+    padding: 44px;
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(16px);
+}
+
+.container {
+    padding-top: 18px;
+}
+
+.tool-section {
+    margin-top: 30px;
+}
+
+.section-heading {
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 1.45rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.page-header {
+    margin-bottom: 24px;
+}
+
+.page-intro h1 {
+    margin: 10px 0 10px;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.page-intro p {
+    margin: 0;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.tool-card {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 24px;
+    box-shadow: 0 16px 60px rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(14px);
+}
