@@ -9,6 +9,14 @@
     margin: 0 0 12px;
 }
 
+.txt-success {
+    color: #28a745;
+}
+
+.txt-danger {
+    color: #dc3545;
+}
+
 .hero h1 {
     font-size: clamp(1.9rem, 3.2vw, 3rem);
     line-height: 1.15;
@@ -215,4 +223,11 @@
         transform:rotate(360deg);
     }
 
+}
+
+
+.txt-heading{
+    font-size: 24px;
+    font-weight:600;
+    color:var(--text);
 }
